@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5001;
 
 
 // Allow frontend requests from deployed URL
-app.use(cors({ origin: "http://localhost:5173", methods: ["GET", "POST", "DELETE", "PUT"], credentials: true }));
+app.use(cors({ origin: VITE_API_URL, methods: ["GET", "POST", "DELETE", "PUT"], credentials: true }));
 // make uploads folder public
 app.use(express.json());// this middleware is used to parse JSON bodies
 app.use(rateLimiter);
