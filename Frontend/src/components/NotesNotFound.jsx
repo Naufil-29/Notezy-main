@@ -13,7 +13,7 @@ const NotesNotFound = () => {
         <p className='text-base-content/70'> 
         Ready to Orgainze your thoughts? Create your first note to start the journey.
         </p>
-        <Link to="/api/create"> 
+        <Link to="/create"> 
         <Button className='btn bg-primary'> 
         Create your first note
         </Button>
